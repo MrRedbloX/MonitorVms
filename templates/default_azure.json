@@ -1,0 +1,152 @@
+{
+    "Percentage CPU": {
+        "enable": true
+    },
+    "Network In": {
+        "enable": true
+    },
+    "Network Out": {
+        "enable": true
+    },
+    "Disk Read Bytes": {
+        "enable": true
+    },
+    "Disk Write Bytes": {
+        "enable": true
+    },
+    "Disk Read Operations/Sec": {
+        "enable": true
+    },
+    "Disk Write Operations/Sec": {
+        "enable": true
+    },
+    "CPU Credits Remaining": {
+        "enable": false
+    },
+    "CPU Credits Consumed": {
+        "enable": false
+    },
+    "Data Disk Read Bytes/sec": {
+        "enable": true
+    },
+    "Data Disk Write Bytes/sec": {
+        "enable": true
+    },
+    "Data Disk Read Operations/Sec": {
+        "enable": true
+    },
+    "Data Disk Write Operations/Sec": {
+        "enable": true
+    },
+    "Data Disk Queue Depth": {
+        "enable": true
+    },
+    "Data Disk Bandwidth Consumed Percentage": {
+        "enable": false
+    },
+    "Data Disk IOPS Consumed Percentage": {
+        "enable": false
+    },
+    "Data Disk Target Bandwidth": {
+        "enable": false
+    },
+    "Data Disk Target IOPS": {
+        "enable": false
+    },
+    "Data Disk Max Burst Bandwidth": {
+        "enable": false
+    },
+    "Data Disk Max Burst IOPS": {
+        "enable": false
+    },
+    "Data Disk Used Burst BPS Credits Percentage": {
+        "enable": false
+    },
+    "Data Disk Used Burst IO Credits Percentage": {
+        "enable": false
+    },
+    "OS Disk Read Bytes/sec": {
+        "enable": true
+    },
+    "OS Disk Write Bytes/sec": {
+        "enable": true
+    },
+    "OS Disk Read Operations/Sec": {
+        "enable": true
+    },
+    "OS Disk Write Operations/Sec": {
+        "enable": true
+    },
+    "OS Disk Queue Depth": {
+        "enable": false
+    },
+    "OS Disk Bandwidth Consumed Percentage": {
+        "enable": false
+    },
+    "OS Disk IOPS Consumed Percentage": {
+        "enable": false
+    },
+    "OS Disk Target Bandwidth": {
+        "enable": false
+    },
+    "OS Disk Target IOPS": {
+        "enable": false
+    },
+    "OS Disk Max Burst Bandwidth": {
+        "enable": false
+    },
+    "OS Disk Max Burst IOPS": {
+        "enable": false
+    },
+    "OS Disk Used Burst BPS Credits Percentage": {
+        "enable": false
+    },
+    "OS Disk Used Burst IO Credits Percentage": {
+        "enable": false
+    },
+    "Inbound Flows": {
+        "enable": false
+    },
+    "Outbound Flows": {
+        "enable": false
+    },
+    "Inbound Flows Maximum Creation Rate": {
+        "enable": false
+    },
+    "Outbound Flows Maximum Creation Rate": {
+        "enable": false
+    },
+    "Premium Data Disk Cache Read Hit": {
+        "enable": false
+    },
+    "Premium Data Disk Cache Read Miss": {
+        "enable": false
+    },
+    "Premium OS Disk Cache Read Hit": {
+        "enable": false
+    },
+    "Premium OS Disk Cache Read Miss": {
+        "enable": false
+    },
+    "VM Cached Bandwidth Consumed Percentage": {
+        "enable": false
+    },
+    "VM Cached IOPS Consumed Percentage": {
+        "enable": false
+    },
+    "VM Uncached Bandwidth Consumed Percentage": {
+        "enable": false
+    },
+    "VM Uncached IOPS Consumed Percentage": {
+        "enable": false
+    },
+    "Network In Total": {
+        "enable": true
+    },
+    "Network Out Total": {
+        "enable": true
+    },
+    "Available Memory Bytes": {
+        "enable": true
+    }
+}

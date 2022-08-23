@@ -1,0 +1,7 @@
+You will need to attach the following roles for your service account.
+
+GCP:
+ - Monitoring
+ - Compute
+ Azure:
+ - Microsoft.Compute/virtualMachines/read

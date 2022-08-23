@@ -1,0 +1,111 @@
+{
+    "guest_visible_vcpus": {
+        "enable": false
+    },
+    "reserved_cores": {
+        "enable": false
+    },
+    "scheduler_wait_time": {
+        "enable": false
+    },
+    "usage_time": {
+        "enable": false
+    },
+    "utilization": {
+        "enable": true
+    },
+    "max_read_bytes_count": {
+        "enable": false
+    },
+    "max_read_ops_count": {
+        "enable": false
+    },
+    "max_write_bytes_count": {
+        "enable": false
+    },
+    "max_write_ops_count": {
+        "enable": false
+    },
+    "read_bytes_count": {
+        "enable": true
+    },
+    "read_ops_count": {
+        "enable": true
+    },
+
+    "throttled_read_bytes_count": {
+        "enable": true
+    },
+    "throttled_read_ops_count": {
+        "enable": true
+    },
+    "throttled_write_bytes_count": {
+        "enable": true
+    },
+    "throttled_write_ops_count": {
+        "enable": true
+    },
+    "write_bytes_count": {
+        "enable": true
+    },
+    "write_ops_count": {
+        "enable": true
+    },
+    "early_boot_validation_status": {
+        "enable": false
+    },
+    "late_boot_validation_status": {
+        "enable": false
+    },
+    "ram_size": {
+        "enable": true
+    },
+    "ram_used": {
+        "enable": true
+    },
+    "swap_in_bytes_count": {
+        "enable": true
+    },
+    "swap_out_bytes_count": {
+        "enable": true
+    },
+    "received_bytes_count": {
+        "enable": true
+    },
+    "received_packets_count": {
+        "enable": true
+    },
+    "sent_bytes_count": {
+        "enable": true
+    },
+    "sent_packets_count": {
+        "enable": true
+    },
+    "uptime": {
+        "enable": true
+    },
+    "uptime_total": {
+        "enable": true
+    },
+    "predicted_capacity": {
+        "enable": false
+    },
+    "predicted_size": {
+        "enable": false
+    },
+    "predicted_utilization": {
+        "enable": false
+    },
+    "size": {
+        "enable": false
+    },
+    "exceeded": {
+        "enable": false
+    },
+    "limit": {
+        "enable": false
+    },
+    "usage": {
+        "enable": false
+    }
+}

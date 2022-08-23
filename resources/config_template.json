@@ -1,0 +1,42 @@
+{
+    "polling_interval": 5, // The script will poll every 5 seconds.
+    "kafka_ip": "localhost:9092", // The ip address of your Kafka server.
+    "accounts": [ // A list of accounts to monitor
+        {
+            "enable": true, // If false the account will not be monitored
+            "ent_name": "Google", // Name of the Kafka topic
+            "provider": "GCP", // The name of the cloud provider (i.e GPC or Azure)
+            "credentials": { // Credential for the service account
+                "type": "service_account",
+                "project_id": "*****",
+                "private_key_id": "*****",
+                "private_key": "*****",
+                "client_email": "*****",
+                "client_id": "*****",
+                "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                "token_uri": "https://oauth2.googleapis.com/token",
+                "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+                "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/*****.iam.gserviceaccount.com"
+            },
+            "send_to_kafka": false, // If true it will send messages to Kafka
+            "log_to_file": true, // If true it will append the messages to a local file
+            "output_file": "gcp.json", // The name of the local file
+            "template": "templates/default_gcp.json" // The template to use
+        },
+        {
+            "enable": true,
+            "ent_name": "Microsoft",
+            "provider": "Azure",
+            "credentials": { // Credentials for the service principal
+                "client_id": "*****",
+                "client_secret": "*****",
+                "tenant_id": "*****",
+                "subscription_id": "*****"
+            },
+            "send_to_kafka": false,
+            "log_to_file": true,
+            "output_file": "azure.json",
+            "template": "templates/default_azure.json"
+        }
+    ]
+}
