@@ -8,6 +8,7 @@ from time import time
 from azure.mgmt.compute import ComputeManagementClient
 from azure.identity import ClientSecretCredential
 from requests import get
+from google.protobuf.json_format import MessageToDict
 
 class Handler(ABC):
 
@@ -68,19 +69,23 @@ class GCP(Handler):
             now = time()
             seconds = int(now)
             nanos = int((now - seconds) * 10 ** 9)
-            return client.list_time_series(
-                request={
-                    "name": project_name,
-                    "filter": f'metric.type = "{metric_type}" AND metric.labels.instance_name = "{instance_name}"',
-                    "interval": TimeInterval(
-                        {
-                            "end_time": {"seconds": seconds, "nanos": nanos},
-                            "start_time": {"seconds": (seconds - 1200), "nanos": nanos},
-                        }
-                    ),
-                    "view": ListTimeSeriesRequest.TimeSeriesView.FULL,
-                }
-            )._response.time_series[-1].points[-1].value.double_value
+            response = MessageToDict(
+                client.list_time_series(
+                    request={
+                        "name": project_name,
+                        "filter": f'metric.type = "{metric_type}" AND metric.labels.instance_name = "{instance_name}"',
+                        "interval": TimeInterval(
+                            {
+                                "end_time": {"seconds": seconds, "nanos": nanos},
+                                "start_time": {"seconds": (seconds - 300), "nanos": nanos},
+                            }
+                        ),
+                        "view": ListTimeSeriesRequest.TimeSeriesView.FULL,
+                    }
+                )._pb,
+                including_default_value_fields=False
+            )
+            return str(list(response['timeSeries'][-1]['points'][-1]['value'].values())[0])
         except:
             pass
 
